@@ -1,0 +1,26 @@
+@import '../../scss/color.scss';
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+  .icon-loading {
+    width: 1.6rem;
+    height: 1.6rem;
+    
+    color: $text-secondary;
+    
+    animation: animate-loading 1s linear infinite;
+  }
+}

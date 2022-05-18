@@ -1,0 +1,371 @@
+@import '../../scss/color.scss';
+
+.widget-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  padding: 1.2rem;
+
+  background-color: $surface-primary;
+
+  border-radius: 1.6rem;
+
+  position: relative;
+
+  header {
+    display: flex;
+    align-items: center;
+
+    .button-back {
+      background-color: transparent;
+
+      position: absolute;
+      left: 2rem;
+
+      cursor: pointer;
+      
+      .icon-back {
+        width: 1.6rem;
+        height: 1.6rem;
+  
+        color: $text-secondary;
+
+        &:hover {
+          color: $text-primary;
+        }
+      }
+    }
+
+    .feedback-title {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+
+      .image-feedback-title {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+
+    h4 {
+      font-size: 2rem;
+      font-weight: 500;
+
+      line-height: 2.4rem;
+    }
+
+    .button-close {
+      position: absolute;
+      right: 2rem;
+    }
+  }
+
+  .header-success {
+    .button-close {
+      top: 1.8rem;
+    }
+  }
+
+  .container-feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+
+    .select-feedback {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: .8rem;
+
+      padding: .8rem;
+
+      width: 9.6rem;
+      height: 10.2rem;
+
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+
+
+      background-color: $surface-secondary;
+
+      border-radius: .8rem;
+      border: .2rem solid transparent;
+
+      cursor: pointer;
+
+      &:hover {
+        border-color: $color-violet;
+      }
+
+      &:focus {
+        outline: none;
+
+        border-color: $color-violet;
+      }
+    }
+  }
+  
+  .form-feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    textarea {
+      min-width: 30.4rem;
+      width: 95%;
+      min-height: 11.2rem;
+
+      padding: .7rem;
+
+      font-size: 1.4rem;
+      
+      line-height: 1.96rem;
+      color: $text-secondary;
+
+      background-color: $surface-primary;
+
+      border: .2rem solid $color-stroke;
+      border-radius: .4rem;
+
+      resize: none;
+
+      &:focus {
+        outline: none;
+        border: .2rem solid $color-violet;
+
+        border-radius: .4rem;
+      }
+
+      &::-webkit-scrollbar {
+        width: .4rem;
+        height: 4rem;
+      }
+      
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background-color: $color-stroke;
+        border-radius: 2.0rem;
+      }  
+    }
+
+    footer {
+      .container-footer {
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+
+        .screenschot {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          width: 4rem;
+          height: 4rem;
+          
+          padding: .8rem;
+          
+          border: .2rem solid transparent;
+          border-radius: .4rem;
+          
+          background-color: $surface-secondary;
+
+          cursor: pointer;
+
+          .icon-screenschot {
+            width: 2.4rem;
+            height: 2.4rem;
+
+            color: $text-secondary;
+            
+            &:hover {
+              color: $text-primary;
+            }
+          }
+
+          &:focus {
+            border: .2rem solid $color-violet;
+            outline: none;
+          }
+
+          &:hover {
+            background-color: $surface-secondary-hover;
+
+            transition: all 300ms;
+            
+            .icon-screenschot {
+              color: $text-primary;
+
+              transition: all 300ms
+            }
+  
+          }
+        }
+
+        .photo {
+          width: 4.2rem;
+          height: 4rem;
+
+          padding: .8rem;
+          
+          border: .2rem solid transparent;
+          border-radius: .4rem;
+
+          border: transparent;
+
+          display: flex;
+          align-items: end;
+          justify-content: end;
+
+          cursor: pointer;
+          
+          .icon-trash {
+            color: $text-secondary;
+          
+            &:hover {
+              color: $text-primary;
+            }
+          }
+
+          &:hover {
+            .icon-trash{
+              color: $text-primary;
+            }
+          }
+
+        }
+
+        .submit-feedback {
+          width: 100%;
+          height: 4rem;
+
+          font-weight: 500  ;
+          font-size: 1.4rem;
+          line-height: 2.4rem;
+
+          border: .2rem solid transparent;
+          border-radius: .7rem;
+
+          background-color: $color-violet;
+          color: #FFFFFF;
+
+          cursor: pointer;
+
+          &:focus {
+            outline: none;
+
+            box-shadow: 0 0 0.3rem 0.14rem $color-violet;
+
+            border: .2rem solid $surface-secondary;
+          }
+
+          &:hover {
+            background-color: $color-hover-violet;
+
+            transition: all 300ms
+          }
+
+          &:disabled {
+            opacity: 0.5;
+
+            cursor: no-drop;
+
+            &:hover {
+              background-color: $color-violet;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .success {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 2rem;
+
+    width: 30.4rem;
+
+    padding: 2rem 0;
+
+    .title-success {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      gap: .5rem;
+
+      h3 {
+        font-weight: 500;
+        font-size: 2.0rem;
+        line-height: 2.4rem;
+      }
+    }
+
+    button {
+      padding: .8rem 2.4rem;
+
+      background-color: $surface-secondary;
+      color: $text-primary;
+
+      border: .2rem solid transparent;
+      border-radius: .4rem;
+
+      font-size: 1.4rem;
+      font-weight: 500;
+
+      line-height: 2.4rem;
+      text-align: center;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: $surface-secondary-hover;
+
+        transition: all 300ms;
+      }
+
+      &:focus {
+        outline: none;
+
+        box-shadow: 0 0 0.3rem 0.14rem $color-violet;
+
+        border: .2rem solid $surface-secondary;
+      }
+    }
+  }
+
+  .widget-footer {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+
+    color: $text-secondary;
+    
+    a {
+      color: $color-violet;
+
+      text-decoration: none;
+
+      position: relative;
+
+      &::after {
+        content: '';
+
+        position: absolute;
+        bottom: -.1rem;
+        left: 0;
+
+        width: 100%;
+        height: .1rem;
+
+        background-color: $color-violet;
+      }
+    }
+  }
+}
