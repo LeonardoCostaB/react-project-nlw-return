@@ -87,6 +87,6 @@
 
 <ul>
   <li>
-    Aplicação: <a href="https://react-project-nlw-return.vercel.app/">Acessar Aplicação</a>
+    Aplicação: <a href="https://react-project-nlw-return.vercel.app/" target="_blank">Acessar Aplicação</a>
   </li>
 </ul>
