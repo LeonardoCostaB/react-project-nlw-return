@@ -25,6 +25,6 @@ export async function submit(req: Request, res: Response) {
   } catch (err) {
     console.log(err)
 
-    res.status(500).json({ error: "Internal Server Error" })
+    return res.status(500).json({ error: "Internal Server Error" })
   }  
 }
