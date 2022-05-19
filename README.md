@@ -82,6 +82,30 @@
   </ul>
 
 <h2>
+  ##### Informações adicionais
+</h2>
+
+<h3>
+  Sobre o projeto
+</h3>
+
+<p>
+  Esse projeto teve o css feito com tailwind, porém, para sempre estar treinando a cada projeto o meu css, eu fiz ele totalmente utilizando somente o Sass. <br />
+  <br />
+  Então o meu projeto e do professor tem a mesmas proposta porém um pouco diferente a arquitetura.
+</p>
+
+<h3>
+  funcionalidades adicionais
+</h3>
+
+<p>
+  O layout desse projeto, conta também com o modo light, mas eu só desenvolvi no modo dark, e poderia dar um feedback melhor para o usuário se durante o envio tiver algum tipo de erro, seja ele por erro do usuário ou também por erro do servidor. <br/>
+  <br />
+  Eu com certeza vou utilizar esse componente em projetos futuros e assim deixando ele de forma mais completa.
+</p>
+
+<h2>
   Link deploy
 </h2>
 
